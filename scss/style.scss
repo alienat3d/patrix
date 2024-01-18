@@ -1,0 +1,17 @@
+@use 'custom';
+// === IMPORT THE COMPONENTS ===
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+// === IMPORT THE SECTIONS ===
+@use 'sections/header';
+@use 'sections/hero';
+@use 'sections/companies';
+@use 'sections/services';
+@use 'sections/testimonials';
+@use 'sections/faq';
+@use 'sections/portfolio';
+@use 'sections/contact-form';
+@use 'sections/footer';
