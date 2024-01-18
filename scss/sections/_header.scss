@@ -1,0 +1,16 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.menu{
+  @include gradient;
+}
+
+.menu li {
+  padding: 0 0.7rem;
+}
+
+.menu li a {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: $white;
+}
