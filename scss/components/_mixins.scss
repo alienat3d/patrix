@@ -1,5 +1,14 @@
 @use '../custom' as *;
 
+// FROM PURPLE TO PINK GRADIENT COLOR
 @mixin gradient {
   background: linear-gradient(to right, rgba($primary, .95), rgba($secondary, .95));
+}
+
+// ABSOLUTE CENTERING
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

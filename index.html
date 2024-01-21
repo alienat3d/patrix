@@ -6,17 +6,26 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1">
   <title>Patrix</title>
-  <link href="assets/css/vendor/bootstrap.min.css">
-  <link href="assets/css/font-awesome.css"
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-  <link href="assets/css/style.css"
+  <link href="./assets/css/vendor/bootstrap.min.css">
+  <link href="./assets/css/vendor/glightbox.min.css">
+  <link href="./assets/css/font-awesome.css"
+    rel="stylesheet">
+  <link href="./assets/css/style.css"
     rel="stylesheet">
 </head>
 
 <body>
   <!-- === HEADER === -->
   <header class="header">
-    <nav class="navbar navbar-expand-lg menu" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg menu shadow fixed-top"
+      data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand"
           href="#">
@@ -72,7 +81,49 @@
     </nav>
   </header>
   <!-- === / HEADER === -->
-  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- === HERO === -->
+  <section id="home"
+    class="hero">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- == HERO [description] == -->
+        <div class="col-md-6 hero__description">
+          <h1 class="display-2">
+            <span class="display-2--hero-intro">Hey! It’s Patrix.</span>
+            <p class="display-2--hero-description lh-base">
+              A multi-purpose responsive layout created with Bootstrap v.5.
+            </p>
+          </h1>
+          <button class="rounded-pill btn-rounded">
+            Get in Touch
+            <span>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </button>
+        </div>
+        <!-- == HERO [video] == -->
+        <div class="col-md-6 text-end hero__video-box">
+          <div class="video-box">
+            <img src="./assets/images/intro-section-illustration.png"
+              class="img-fluid"
+              alt="Video illustration" />
+            <a class="glightbox position-absolute top-50 start-50 translate-middle" href="">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span class="border-animation border-animation--1"></span>
+              <span class="border-animation border-animation--2"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,213.3C840,256,960,288,1080,277.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  </section>
+  <!-- === / HERO === -->
+  <script src="./assets/js/vendor/glightbox.min.js"></script>
+  <script src="./assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>

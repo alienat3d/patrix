@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+.display-2 {
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+.display-2--hero-intro{
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+.display-2--hero-description{
+  display: block;
+  font-size: 1.5rem;
+  text-transform: none;
+}
