@@ -21,3 +21,22 @@
     font-size: 1.4rem;
   }
 }
+
+.heading-line::before {
+  content: '';
+  margin: 0 auto;
+  display: block;
+  width: 10rem;
+  height: 0.15rem;
+  background-color: $primary;
+}
+.heading-line::after {
+  content: '';
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 40% 40% 40% 40% / 0% 0% 100% 100%;
+  padding-top: .1rem;
+  width: 2rem;
+  height: 0.3rem;
+  background-color: darken($primary, 5%);
+}

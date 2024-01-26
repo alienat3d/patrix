@@ -11934,6 +11934,26 @@ textarea.form-control-lg {
   }
 }
 
+.heading-line::before {
+  content: "";
+  margin: 0 auto;
+  display: block;
+  width: 10rem;
+  height: 0.15rem;
+  background-color: #9926f0;
+}
+
+.heading-line::after {
+  content: "";
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 40% 40% 40% 40%/0% 0% 100% 100%;
+  padding-top: 0.1rem;
+  width: 2rem;
+  height: 0.3rem;
+  background-color: #8d10ec;
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
@@ -11990,6 +12010,27 @@ textarea.form-control-lg {
 
 .border-animation--2 {
   animation-delay: 1.5s;
+}
+
+.companies {
+  padding: 0 0 5rem 0;
+}
+
+.companies__logo-box {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  max-width: 100%;
+  height: 3rem;
+}
+
+.companies__logo-box img {
+  height: 100%;
+  filter: grayscale(50);
+}
+.companies__logo-box img:hover {
+  filter: grayscale(0);
 }
 
 /*# sourceMappingURL=style.css.map */
