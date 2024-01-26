@@ -22,6 +22,24 @@
   }
 }
 
+.display-3 {
+  font-family: 'Poppins', sans-serif;
+}
+.display-3--title {
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to right, $primary, $secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.8rem;
+  }
+}
+
 .heading-line::before {
   content: '';
   margin: 0 auto;
@@ -39,4 +57,9 @@
   width: 2rem;
   height: 0.3rem;
   background-color: darken($primary, 5%);
+}
+
+.border-right {
+  border-right: 0.1rem solid $gray-300;
+  height: 100%;
 }
