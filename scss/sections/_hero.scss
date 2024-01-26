@@ -16,9 +16,13 @@
   // @include absolute-center;
 }
 
-.video-box a span i {
+.video-box__play-button span i {
   font-size: 6rem;
   color: $secondary;
+  transition: transform 0.3s;
+}
+.video-box__play-button:hover i {
+  transform: scale(0.90);
 }
 
 .border-animation{
