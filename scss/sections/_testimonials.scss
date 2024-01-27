@@ -1,0 +1,67 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.testimonials{
+  position: relative;
+  padding: 0;
+
+  @include gradient;
+}
+
+.testimonials__title {
+  position: relative;
+}
+.testimonials__title::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: $gray-300;
+  opacity: 0.3;
+}
+
+.testimonials__card {
+  border-radius: 0.625rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  height: auto;
+  background-color: rgba($white, 0.8);
+}
+.testimonials__card i {
+  font-size: 1.5rem;
+  color: rgba($primary, 0.7);
+}
+
+.testimonials__pic {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6rem;
+  height: 6rem;
+}
+.testimonials__pic img {
+  border: 0.325rem solid rgba($primary, 0.7);
+}
+
+.testimonials__name {
+  margin-bottom: 1rem;
+  padding-top: 3.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+  color: $white;
+}
+.testimonials__name h3 {
+  padding-top: 0.8rem;
+}
+.testimonials__name p {
+  padding-bottom: 2rem;
+}
+
+.ratings i {
+  font-size: 1rem;
+  color: rgba($primary, 0.7);
+}
