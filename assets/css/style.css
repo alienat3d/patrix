@@ -11979,6 +11979,10 @@ textarea.form-control-lg {
   height: 100%;
 }
 
+.gradient {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
@@ -12217,6 +12221,28 @@ textarea.form-control-lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.contact {
+  padding: 4rem 0;
+  background-color: #e9ecef;
+}
+
+.contact__info {
+  margin: 1rem 0;
+  padding: 3rem;
+}
+
+.contact__info-list {
+  position: relative;
+  margin-bottom: 0.7rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  list-style-type: none;
+}
+
+.form {
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
