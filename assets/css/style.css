@@ -12246,7 +12246,7 @@ textarea.form-control-lg {
 }
 
 .footer {
-  padding: 1rem;
+  padding-top: 2rem;
   background-color: #151414;
 }
 
@@ -12299,6 +12299,10 @@ textarea.form-control-lg {
 .footer__social-media a {
   text-decoration: none;
   color: #fff;
+  transition: color 0.3s;
+}
+.footer__social-media a:hover {
+  color: #9926f0;
 }
 
 .footer__social-media i {
@@ -12309,6 +12313,82 @@ textarea.form-control-lg {
   .footer__social-media i {
     font-size: 1.6rem;
   }
+}
+
+.footer__company-info-title {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.footer__company-info-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: #495057;
+}
+
+.footer__company-info-list {
+  list-style-type: none;
+}
+
+.footer__company-info-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer__company-info-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__company-info-list a:hover {
+  color: #9926f0;
+}
+
+.footer__bottom {
+  background-color: #000;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.footer__copyright span {
+  color: #ced4da;
+}
+
+.footer__copyright a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.footer__copyright a:hover {
+  color: #9926f0;
+}
+
+.back-to-top {
+  z-index: 99999;
+  position: fixed;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 1s ease-in;
+}
+.back-to-top:hover {
+  transform: translateY(-30%);
+}
+
+.back-to-top i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
